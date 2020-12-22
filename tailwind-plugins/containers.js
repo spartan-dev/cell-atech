@@ -37,7 +37,8 @@ module.exports = function ({ theme, addUtilities }) {
       padding: '26px',
       '@media (min-width: 1280px)': {
         width: '570px',
-        height: '144px'
+        height: '144px',
+        padding: '18px 24px'
       },
       '@media (min-width: 1024px) and (max-width: 1279px)': {
         width: '370px',
@@ -49,11 +50,13 @@ module.exports = function ({ theme, addUtilities }) {
       },
       '@media (min-width: 426px) and (max-width: 767px)': {
         width: '570px',
-        height: '144px'
+        height: '144px',
+        padding: '19px 24px'
       },
       '@media (max-width: 425px)': {
         width: '320px',
-        height: '272px'
+        height: '272px',
+        padding: '28px 16px'
       }
     },
     '.dialog': {

@@ -9,7 +9,14 @@ module.exports = function ({ theme, addUtilities }) {
         width: '168px'
       },
       '@media (max-width: 767px)': {
-        width: '120px'
+        width: '120px',
+        marginBottom: '6vh'
+      },
+      '@media (min-width:768px) and (max-width: 1023px)': {
+        marginBottom: '10vh'
+      },
+      '@media (min-width:1024px)': {
+        marginBottom: '13vh'
       }
     },
     '.logo-color': {
@@ -42,6 +49,24 @@ module.exports = function ({ theme, addUtilities }) {
         height: '70px'
       }
     },
+    '.icon-text': {
+      height: 'auto',
+      '@media (min-width: 1280px)': {
+        width: '402px'
+      },
+      '@media (min-width: 1024px) and (max-width: 1279px)': {
+        width: '322px'
+      },
+      '@media (min-width:768px) and (max-width: 1023px)': {
+        width: '502px'
+      },
+      '@media (min-width:426px) and (max-width: 767px)': {
+        width: '402px'
+      },
+      '@media (max-width: 425px)': {
+        width: '288px'
+      }
+    },
     '.sent': {
       width: 'auto',
       '@media (min-width: 1280px)': {
@@ -59,13 +84,13 @@ module.exports = function ({ theme, addUtilities }) {
       '@media (min-width:1280) and (max-width: 1519px)': {
         width: 'calc(50vw-15px)'
       },
-      '@media (min-width:1024) and (max-width: 1279px)': {
+      '@media (min-width:1024px) and (max-width: 1279px)': {
         width: '560px'
       },
-      '@media (min-width:768) and (max-width: 1023px)': {
+      '@media (min-width:768px) and (max-width: 1023px)': {
         width: '670px'
       },
-      '@media (min-width:426) and (max-width: 767px)': {
+      '@media (min-width:426px) and (max-width: 767px)': {
         width: '570px'
       },
       '@media (max-width: 425px)': {

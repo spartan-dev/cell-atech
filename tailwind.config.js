@@ -14,19 +14,24 @@ module.exports = {
         'black-1': 'rgba(0, 0, 0, 0.85)',
         'black-2': 'rgba(0, 0, 0, 0.80)',
         'black-3': 'rgba(0, 0, 0, 0.75)',
-        'black-4': 'rgba(0, 0, 0, 0.65)',
-        'gr-red': 'linear-gradient(237.68deg, #730D12 27.39%, #D8272F 71.33%);'
+        'black-4': 'rgba(0, 0, 0, 0.65)',    
       },
-
-    },
-    fontFamily: {
-      roboto: ['Roboto'],
-      'open-sans': ['Open Sans']
-    },
-
+      backgroundImage: {
+        'gr-red' : 'linear-gradient(237.68deg, #730D12 27.39%, #D8272F 71.33%);'
+      },
+      },
+      fontFamily: {
+        roboto: ['Roboto'],
+        'open-sans': ['Open Sans']
+      },
+      maxWidth: {
+       heromd: '68%',
+       herolg: '50%'
+      },
   },
   variants: {
     backgroundColor: ["responsive", "hover", "focus", "active"],
+    margin: ["responsive", "hover", "focus", "active"],
   },
   plugins: [
     plugin(require('./tailwind-plugins/buttons')),
