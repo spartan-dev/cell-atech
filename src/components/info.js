@@ -13,7 +13,7 @@ const InfoSection = () => (
             <p className='text-body text-black-3 lg:w-3/5'>Whether your business has a complex network of distribution centers or just needs to get parts to the line fast, Cella Technologies has the 
         solution to empower your material handling team.</p>
         </div>
-        <div className='lg:flex lg:flex-wrap container justify-around'>
+        <div className='flex flex-wrap items-center container justify-around'>
             <div className='card flex flex-col sm:flex-row lg:flex-col xl:flex-row xl:justify-between sm:justify-between items-center lg:justify-center mb-6 md:mb-8'>
                 <div className='mb-4 sm:mb-0 lg:mb-4 xl:mb-0'>
                     <img className='icon' src={Arrow} alt='arrow'/>

@@ -11,10 +11,10 @@ module.exports = function ({ theme, addUtilities }) {
       '@media (min-width: 768px) and (max-width: 1023px)': {
         maxWidth: '670px'
       },
-      '@media (min-width: 426px) and (max-width: 767px)': {
+      '@media (min-width: 640px) and (max-width: 767px)': {
         maxWidth: '570px'
       },
-      '@media (max-width: 425px)': {
+      '@media (max-width: 639px)': {
         maxWidth: '320px'
       }
     },
@@ -48,12 +48,12 @@ module.exports = function ({ theme, addUtilities }) {
         width: '670px',
         height: '144px'
       },
-      '@media (min-width: 426px) and (max-width: 767px)': {
+      '@media (min-width: 640px) and (max-width: 767px)': {
         width: '570px',
         height: '144px',
         padding: '19px 24px'
       },
-      '@media (max-width: 425px)': {
+      '@media (max-width: 639px)': {
         width: '320px',
         height: '272px',
         padding: '28px 16px'
