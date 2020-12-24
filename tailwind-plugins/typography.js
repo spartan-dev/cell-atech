@@ -103,6 +103,16 @@ module.exports = function ({ theme, addUtilities }) {
       '@media (max-width: 639px)': {
         fontSize: '14px'
       }
+    },
+    '.text-footer': {
+      fontFamily: theme('fontFamily')['open-sans'],
+      fontStyle: 'normal',
+      fontWeight: 'normal',
+      fontSize: '16px',
+      lineHeight: '153.19%',
+      '@media (max-width: 678px)': {
+        fontSize: '14px'
+      },
     }
   });
 };
