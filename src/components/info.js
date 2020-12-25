@@ -34,7 +34,7 @@ const InfoSection = () => (
                     <p className='text-small text-black-4'>Demand-driven picklists from production schedules, customer shipments, or min/max inventory levels. Equip your material handlers with this efficient tool.</p>
                 </div>
             </div>
-            <div className='card flex flex-col sm:flex-row lg:flex-col xl:flex-row xl:justify-between items-center sm:justify-between lg:justify-center mb-6 md:mb-8'>
+            <div className='card flex flex-col sm:flex-row lg:flex-col xl:flex-row xl:justify-between items-center sm:justify-between lg:justify-center mb-6 md:mb-8 xl:mb-0'>
                 <div className='mb-4 sm:mb-0 sm:w-20 flex justify-center lg:mb-4 xl:mb-0'>
                     <img className='icon' src={Phone} alt='phone'/>
                 </div>
@@ -47,7 +47,7 @@ const InfoSection = () => (
                 </div>
             </div>
             <div className='card flex flex-col sm:flex-row lg:flex-col xl:flex-row xl:justify-between items-center sm:justify-between lg:justify-center mb-6 md:mb-8 xl:mb-0'>
-                <div className='mb-4 sm:mb-0 lg:mb-4'>
+                <div className='mb-4 sm:mb-0 lg:mb-4 xl:mb-0'>
                     <img className='icon' src={Person} alt='person'/>
                 </div>
                 <div className='icon-text text-center sm:text-left lg:text-center xl:text-left'>
