@@ -1,7 +1,8 @@
 module.exports = function ({ theme, addUtilities }) {
   addUtilities({
     ".container": {
-      margin: "0 auto",
+      marginLeft: "auto",
+      marginRight: "auto",
       "@media (min-width: 1280px)": {
         maxWidth: "1170px",
       },

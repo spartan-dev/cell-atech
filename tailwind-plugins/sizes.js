@@ -78,14 +78,19 @@ module.exports = function ({ theme, addUtilities }) {
     },
     '.image': {
       height: 'auto',
-      '@media (min-width: 1520px)': {
-        width: '705px'
+      '@media (min-width: 1536px)': {
+        width: '705px',
+        marginRight: '-135px'
       },
-      '@media (min-width:1280) and (max-width: 1519px)': {
-        width: 'calc(50vw-15px)'
+      '@media (min-width:1280px) and (max-width: 1535px)': {
+        width: 'calc(50vw - 15px)',
+        position: 'absolute',
+        right: '0px'
       },
       '@media (min-width:1024px) and (max-width: 1279px)': {
-        width: '560px'
+        width: '560px',
+        position: 'absolute',
+        right: '0px'
       },
       '@media (min-width:768px) and (max-width: 1023px)': {
         width: '670px'
