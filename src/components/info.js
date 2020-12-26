@@ -7,7 +7,7 @@ import Phone from '../assets/phone.png'
 
 const InfoSection = () => (
 
-    <section className='mt-8 mt-9 container'>
+    <section className='pt-8 container'>
         <div className='text-center my-8 sm:mt-12 sm:mb-11 md:mt-24 md:mb-16 lg:items-center lg:flex lg:flex-col'>
             <h2 className='subheader mb-5 text-black-1'>How can we Help</h2>
             <p className='text-body text-black-3 lg:w-3/5'>Whether your business has a complex network of distribution centers or just needs to get parts to the line fast, Cella Technologies has the 
