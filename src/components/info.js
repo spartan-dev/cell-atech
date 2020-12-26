@@ -7,7 +7,7 @@ import Phone from '../assets/phone.png'
 
 const InfoSection = () => (
 
-    <section className='mt-8 mt-9 container'>
+    <section className='pt-8 container'>
         <div className='text-center my-8 sm:mt-12 sm:mb-11 md:mt-24 md:mb-16 lg:items-center lg:flex lg:flex-col'>
             <h2 className='subheader mb-5 text-black-1'>How can we Help</h2>
             <p className='text-body text-black-3 lg:w-3/5'>Whether your business has a complex network of distribution centers or just needs to get parts to the line fast, Cella Technologies has the 
@@ -34,7 +34,7 @@ const InfoSection = () => (
                     <p className='text-small text-black-4'>Demand-driven picklists from production schedules, customer shipments, or min/max inventory levels. Equip your material handlers with this efficient tool.</p>
                 </div>
             </div>
-            <div className='card flex flex-col sm:flex-row lg:flex-col xl:flex-row xl:justify-between items-center sm:justify-between lg:justify-center mb-6 md:mb-8'>
+            <div className='card flex flex-col sm:flex-row lg:flex-col xl:flex-row xl:justify-between items-center sm:justify-between lg:justify-center mb-6 md:mb-8 xl:mb-0'>
                 <div className='mb-4 sm:mb-0 sm:w-20 flex justify-center lg:mb-4 xl:mb-0'>
                     <img className='icon' src={Phone} alt='phone'/>
                 </div>
@@ -47,7 +47,7 @@ const InfoSection = () => (
                 </div>
             </div>
             <div className='card flex flex-col sm:flex-row lg:flex-col xl:flex-row xl:justify-between items-center sm:justify-between lg:justify-center mb-6 md:mb-8 xl:mb-0'>
-                <div className='mb-4 sm:mb-0 lg:mb-4'>
+                <div className='mb-4 sm:mb-0 lg:mb-4 xl:mb-0'>
                     <img className='icon' src={Person} alt='person'/>
                 </div>
                 <div className='icon-text text-center sm:text-left lg:text-center xl:text-left'>
