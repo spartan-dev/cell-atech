@@ -67,15 +67,6 @@ module.exports = function ({ theme, addUtilities }) {
         width: '288px'
       }
     },
-    '.sent': {
-      width: 'auto',
-      '@media (min-width: 1280px)': {
-        height: '92px'
-      },
-      '@media (max-width: 1279px)': {
-        height: '80px'
-      }
-    },
     '.image': {
       height: 'auto',
       '@media (min-width: 1536px)': {

@@ -5,7 +5,7 @@ const Contact = () => {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <section className="mt-8 container">
+    <section className="container">
       {showModal && (
         <Modal
           show={showModal}
@@ -15,8 +15,8 @@ const Contact = () => {
           children={<ContactForm />}
         />
       )}
-      <div className="text-center my-8 sm:mt-12 sm:mb-11 md:mt-24 md:mb-16 lg:items-center lg:flex lg:flex-col">
-        <h2 className="subheader mb-5 text-black-1">
+      <div className="pt-4 text-center mb-8 sm:mb-11 md:mb-16 lg:items-center lg:flex lg:flex-col">
+        <h2 className="subheader mb-5 text-black-1 xl:pt-0">
           Are you ready to empower your material handling team?
         </h2>
       </div>
