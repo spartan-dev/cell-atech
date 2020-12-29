@@ -1,7 +1,7 @@
 import React from "react";
 
 import PersonCard from "./personcard";
-import about_img from "../images/assets/about-img.png"
+import about_img from "../images/assets/about-img.png";
 
 const About = () => {
   return (
@@ -11,13 +11,13 @@ const About = () => {
           <h2 className="subheader mb-5 xl:mb-2 text-black-1">
             About Cella Technologies
           </h2>
-          <p className="text-body text-black-3 lg:pr-16 xl:pr-0">
+          <p className="text-body text-black-1 lg:pr-16 xl:pr-0">
             Our mission is to take the pain out of Warehouse Management
-            <br className="hidden xl:block" /> and
-            Inventory Control. Our dedication to innovation is second
-            <br className="hidden xl:block" /> only to our
-            commitment to our customers’ success.
-        </p>
+            <br className="hidden xl:block" /> and Inventory Control. Our
+            dedication to innovation is second
+            <br className="hidden xl:block" /> only to our commitment to our
+            customers’ success.
+          </p>
         </div>
         <PersonCard className="flex flex-col items-center lg:block" />
       </div>

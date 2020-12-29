@@ -8,7 +8,7 @@ const Testimonials = () => {
           What Our Customers Are Saying
         </h2>
       </div>
-      <div>
+      <div className="flex justify-center items-center flex-row flex-wrap">
         <PersonCard />
         <PersonCard />
         <PersonCard />

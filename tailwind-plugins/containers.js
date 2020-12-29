@@ -86,5 +86,27 @@ module.exports = function ({ theme, addUtilities }) {
         padding: "12px 8px",
       },
     },
+    ".image-card-container": {
+      "@media (min-width: 1024px)": {
+        width: "358px",
+        height: "144px",
+        padding: "12px",
+      },
+      "@media (min-width: 768px) and (max-width: 1023px)": {
+        width: "320px",
+        height: "120px",
+        padding: "16px 8px",
+      },
+      "@media (min-width: 426px) and (max-width: 767px)": {
+        width: "370px",
+        height: "128px",
+        padding: "24px 16px",
+      },
+      "@media (max-width: 425px)": {
+        width: "320px",
+        height: "120px",
+        padding: "12px 8px",
+      },
+    },
   });
 };
