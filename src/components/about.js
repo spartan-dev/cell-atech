@@ -19,7 +19,9 @@ const About = () => {
             customers’ success.
           </p>
         </div>
-        <PersonCard className="flex flex-col items-center lg:block" />
+        <div className="flex flex-col justify-center items-center">
+          <PersonCard className=" lg:block" />
+        </div>
       </div>
       <img src={about_img} className="image hidden lg:block" />
     </section>

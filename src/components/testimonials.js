@@ -8,7 +8,7 @@ const Testimonials = () => {
           What Our Customers Are Saying
         </h2>
       </div>
-      <div className="flex justify-center items-center flex-row flex-wrap">
+      <div className="flex flex-col justify-center items-center md:auto-rows-max md:place-content-center   md:grid md:grid-cols-2 md:gap-4">
         <PersonCard />
         <PersonCard />
         <PersonCard />

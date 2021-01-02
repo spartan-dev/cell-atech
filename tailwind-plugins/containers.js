@@ -60,6 +60,23 @@ module.exports = function ({ theme, addUtilities }) {
         padding: "28px 16px",
       },
     },
+    ".people-card-container": {
+      "@media (min-width: 768px) and (max-width: 1023px)": {
+        width: "319px",
+        height: "243px",
+        marginRight: "32px",
+      },
+      "@media (min-width: 640px) and (max-width: 767px)": {
+        width: "370px",
+        height: "233px",
+        margin: "46px 32px",
+      },
+      "@media (max-width: 639px)": {
+        width: "320px",
+        height: "227px",
+        margin: "41px 41px",
+      },
+    },
     ".dialog": {
       textAlign: "center",
       background: theme("colors")["grey"],
