@@ -97,10 +97,10 @@ module.exports = function ({ theme, addUtilities }) {
       fontFamily: theme('fontFamily')['open-sans'],
       fontStyle: 'normal',
       lineHeight: '24px',
-      '@media (min-width: 640px)': {
+      '@media (min-width: 768px)': {
         fontSize: '16px'
       },
-      '@media (max-width: 639px)': {
+      '@media (max-width: 767px)': {
         fontSize: '14px'
       }
     },

@@ -14,33 +14,6 @@
   left:10%
 }
 
-.hero {
-  min-height: 100vh;
+::placeholder {
+color: rgba(0, 0, 0, 0.65) !important;
 }
-
-@media screen and (max-width: 639px) {
-  .hero {
-    min-height: 70vh;
-  }
-}
-
- @media screen and (min-width:1024px) and (max-width:1279px) {
-  .ml-7 {
-    margin-left: 27px !important;
-  }
-}
-
-.herobg {
-  top: 0;
-  right: -23px;
-  width: 100vw;
-  opacity: 1;
-}
-
-@media screen and (min-width: 767px) and (max-width: 1023px) {
-  .herobg {
-    right: -49px;
-    opacity: .3;
-  }
-}
-

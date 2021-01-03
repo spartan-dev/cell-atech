@@ -2,28 +2,28 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <div className="px-5 sm:px-8">
-      <div className="text-center my-8 sm:mt-12 sm:mb-11 md:mt-24 md:mb-16 lg:items-center lg:flex lg:flex-col">
-        <h2 className="subheader mb-5 text-black-1">
-          Send us your information, and we will be in touch soon.
+    <div className="modal">
+      <div className="lg:items-center lg:flex lg:flex-col">
+        <h2 className="subheader mt-6 mb-8 text-black-1">
+          Send us your information, <br className="hidden sm:block" /> and we will be in touch soon.
         </h2>
       </div>
       <form action="">
-        <div className="mb-10">
+        <div className="text-black-4">
           <input
-            className="w-full mb-8 border-solid border-b-2 border-gray-600 pb-3 focus:border-transparent focus:outline-none"
+            className="w-full mb-10 sm:mb-8 md:mb-12 border-solid border-b border-black-2 pb-3 focus:outline-none"
             type="text"
             name="name"
             placeholder="Name"
           />
           <input
-            className="w-full mb-8 border-solid border-b-2 border-gray-600 pb-3  focus:border-transparent focus:outline-none"
+            className="w-full mb-10 sm:mb-8 md:mb-12 border-solid border-b border-black-2 pb-3 focus:outline-none"
             type="text"
             name="company"
             placeholder="Company"
           />
           <input
-            className="w-full mb-8 border-solid border-b-2 border-gray-600 pb-3  focus:border-transparent focus:outline-none"
+            className="w-full mb-10 sm:mb-8 md:mb-12 border-solid border-b border-black-2 pb-3 focus:outline-none"
             type="text"
             name="email"
             placeholder="Email"

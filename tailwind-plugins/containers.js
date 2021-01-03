@@ -20,15 +20,30 @@ module.exports = function ({ theme, addUtilities }) {
       },
     },
     ".modal": {
-      margin: "0 auto",
       "@media (min-width: 768px)": {
-        maxWidth: "470px",
+        width: "470px",
+        margin: "40px auto 0 auto",
       },
       "@media (min-width: 426px) and (max-width: 767px)": {
-        maxWidth: "370px",
+        width: "370px",
+        margin: "0px auto"
       },
       "@media (max-width: 425px)": {
         maxWidth: "320px",
+      },
+    },
+    ".modal-close": {
+      margin: "0 auto",
+      "@media (min-width: 768px)": {
+        width: "580px"
+      },
+      "@media (min-width: 426px) and (max-width: 767px)": {
+        width: "480px",
+        padding: "35px 0"
+      },
+      "@media (max-width: 425px)": {
+        width: "296px",
+        padding: "32px 0"
       },
     },
     ".card": {
@@ -63,8 +78,7 @@ module.exports = function ({ theme, addUtilities }) {
     ".people-card-container": {
       "@media (min-width: 768px) and (max-width: 1023px)": {
         width: "319px",
-        height: "243px",
-        marginRight: "32px",
+        height: "243px"
       },
       "@media (min-width: 640px) and (max-width: 767px)": {
         width: "370px",
@@ -74,7 +88,7 @@ module.exports = function ({ theme, addUtilities }) {
       "@media (max-width: 639px)": {
         width: "320px",
         height: "227px",
-        margin: "41px 41px",
+        margin: "41px 0",
       },
     },
     ".dialog": {
@@ -123,6 +137,76 @@ module.exports = function ({ theme, addUtilities }) {
         width: "320px",
         height: "120px",
         padding: "12px 8px",
+      },
+    },
+    ".info-section": {
+      "@media (min-width:1280px)": {
+        marginTop: "120px",
+        marginBottom: "160px"
+      },
+      "@media (min-width: 1024px) and (max-width: 1279px)": {
+        marginTop: "98px",
+        marginBottom: "210px"
+      },
+      "@media (min-width: 768px) and (max-width: 1023px)": {
+        marginTop: "98px",
+        marginBottom: "128px"
+      },
+      "@media (min-width: 426px) and (max-width: 767px)": {
+        marginTop: "50px",
+        marginBottom: "90px"
+      },
+      "@media (max-width: 425px)": {
+        marginTop: "35px",
+        marginBottom: "35px"
+      },
+    },
+    ".testimonials-section": {
+      "@media (min-width:1280px)": {
+        marginTop: "180px",
+        marginBottom: "220px"
+      },
+      "@media (min-width: 1024px) and (max-width: 1279px)": {
+        marginTop: "200px",
+        marginBottom: "210px"
+      },
+      "@media (min-width: 768px) and (max-width: 1023px)": {
+        marginTop: "130px",
+        marginBottom: "140px"
+      },
+      "@media (min-width: 426px) and (max-width: 767px)": {
+        marginTop: "76px",
+        marginBottom: "90px"
+      },
+      "@media (max-width: 425px)": {
+        marginTop: "56px",
+        marginBottom: "64px"
+      },
+    },
+    ".about-section": {
+      '@media (min-width: 1536px)': {
+        marginTop: "130px",
+        marginBottom: "148px"
+      },
+      '@media (min-width:1280px) and (max-width: 1535px)': {
+        marginTop: "320px",
+        marginBottom: "345px"
+      },
+      '@media (min-width:1024px) and (max-width: 1279px)': {
+        marginTop: "280px",
+        marginBottom: "215px"
+      },
+      "@media (min-width: 768px) and (max-width: 1023px)": {
+        marginTop: "140px",
+        marginBottom: "180px"
+      },
+      "@media (min-width: 426px) and (max-width: 767px)": {
+        marginTop: "90px",
+        marginBottom: "90px"
+      },
+      "@media (max-width: 425px)": {
+        marginTop: "64px",
+        marginBottom: "90px"
       },
     },
   });

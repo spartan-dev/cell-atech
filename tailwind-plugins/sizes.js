@@ -93,5 +93,46 @@ module.exports = function ({ theme, addUtilities }) {
         width: '320px'
       }
     },
+    '.hero-image': {
+      height: 'auto',
+      '@media (min-width: 1536px)': {
+        width: '705px',
+        marginRight: '-135px'
+      },
+      '@media (min-width:1280px) and (max-width: 1535px)': {
+        width: 'calc(50vw - 15px)',
+        position: 'absolute',
+        right: '0px'
+      },
+      '@media (min-width:1024px) and (max-width: 1279px)': {
+        width: '512px',
+        position: 'absolute',
+        right: '0px'
+      },
+      '@media (min-width:768px) and (max-width: 1023px)': {
+        width: '520px',
+        opacity: '.3',
+        position: 'absolute',
+        top: '0px',
+        right: '0px'
+      },
+      '@media (max-width: 767px)': {
+        display: 'none'
+      }
+    },
+    '.hero': {
+      '@media (min-width:1024px)': {
+        height: '100vh'
+      },
+      '@media (min-width:768px) and (max-width: 1023px)': {
+        height: '75vh'
+      },
+      '@media (min-width:640px) and (max-width: 767px)': {
+        height: '100vh'
+      },
+      '@media (max-width: 639px)': {
+        height: '75vh'
+      }
+    }
   });
 };
