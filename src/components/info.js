@@ -11,8 +11,8 @@ const Card = ({ className, Img, title, description }) => (
 			<Img className="icon" />
 		</div>
 		<div className='icon-text text-center sm:text-left lg:text-center xl:text-left'>
-			<h3 className='text-title text-black-2 mb-2'>{title}</h3>
-			<p className='text-small text-black-4'>{description}</p>
+			<h2 className='text-title text-black-2 mb-2'>{title}</h2>
+			<h3 className='text-small text-black-4'>{description}</h3>
 		</div>
 	</div>
 )
@@ -20,7 +20,7 @@ const Card = ({ className, Img, title, description }) => (
 const InfoSection = () => (
 	<section className='container info-section'>
 		<div className='text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-12 lg:items-center lg:flex lg:flex-col'>
-			<h2 className='subheader mb-5 xl:mb-2 text-black-1'>How We Can Help</h2>
+			<p className='subheader mb-5 xl:mb-2 text-black-1'>How We Can Help</p>
 			<p className='text-body text-black-3 lg:w-3/4'>
 				Whether your business has a complex network of distribution centers
 				or just needs to get parts to the line fast, Cella Technologies has

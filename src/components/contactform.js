@@ -4,9 +4,9 @@ const ContactForm = () => {
   return (
     <div className="modal">
       <div className="lg:items-center lg:flex lg:flex-col">
-        <h2 className="subheader mt-6 mb-8 text-black-1">
+        <p className="subheader mt-6 mb-8 text-black-1">
           Send us your information, <br className="hidden sm:block" /> and we will be in touch soon.
-        </h2>
+        </p>
       </div>
       <form action="">
         <div className="text-black-4">

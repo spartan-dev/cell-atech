@@ -16,9 +16,9 @@ const Contact = () => {
           children={<ContactForm />}
         />
       )}
-      <h2 className="subheader text-black-1 text-center mb-8 sm:mb-12">
+      <p className="subheader text-black-1 text-center mb-8 sm:mb-12">
         Are you ready to empower your material handling team?
-      </h2>
+      </p>
       <div className="flex flex-col justify-center items-center">
         <button onClick={() => setShowModal(true)} className="btn btn-red">
           Contact us

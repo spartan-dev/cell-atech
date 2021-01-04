@@ -7,10 +7,12 @@ import Footer from "../components/footer";
 import Hero from "../components/hero";
 import InfoSection from "../components/info";
 import Testimonials from "../components/testimonials";
+import SEO from "../components/seo";
 
 export default function Home() {
   return (
     <main>
+      <SEO />
       <Hero />
       <InfoSection />
       <Features />

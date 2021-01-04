@@ -13,10 +13,10 @@ const PersonCard = ({ className }) => {
         </p>
       </div>
       <div className="flex flex-row items-center">
-        <img className="rounded-full w-20 h-20" src={people} alt="people" />
+        <img className="rounded-full w-20 h-20" src={people} alt="people" title="people" />
         <div className="pl-5">
-          <h2 className="text-name mb-1">Janice Hernandez, CEO</h2>
-          <h2 className="text-company">Brighton Manufacturing</h2>
+          <p className="text-name mb-1">Janice Hernandez, CEO</p>
+          <p className="text-company">Brighton Manufacturing</p>
         </div>
       </div>
     </div>
