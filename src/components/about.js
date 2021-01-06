@@ -11,7 +11,7 @@ const About = () => {
           <p className="subheader mb-5 xl:mb-2 text-black-1">
             About Cella Technologies
           </p>
-          <p className="text-body text-black-1 lg:pr-24 xl:pr-12">
+          <p className="text-body text-black-3 lg:pr-24 xl:pr-12">
             Our mission is to take the pain out of Warehouse Management
             and Inventory Control. Our
             dedication to innovation is second

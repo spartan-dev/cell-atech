@@ -17,7 +17,7 @@ const Contact = () => {
         />
       )}
       <p className="subheader text-black-1 text-center mb-8 sm:mb-12">
-        Are you ready to empower your material handling team?
+        Are you ready to empower your material <br className="hidden md:block lg:hidden"/> handling team?
       </p>
       <div className="flex flex-col justify-center items-center">
         <button onClick={() => setShowModal(true)} className="btn btn-red">

@@ -12,7 +12,7 @@ const Hero = () => (
 				<div className='my-4 md:my-5'>
 					<p className='text-body text-white'>
 						Providing true cloud WMS and WES. Cella Technologies <br className="hidden sm:block" />
-					  supports Plex customer's warehouse and production <br className="hidden sm:block" />
+					  supports Plex customers' warehouse and production <br className="hidden sm:block" />
 					  facilities around the globe.
 					</p>
 				</div>

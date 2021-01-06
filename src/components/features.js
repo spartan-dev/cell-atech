@@ -11,15 +11,15 @@ const list = [{
   normal: " to give everyone the right tool for the right job"
 }, {
   bold: "Data and Analytics",
-  normal: " for real-time insight into operations and data-driven decision making"
+  normal: <>for real-time insight into operations and data-driven <br className="hidden sm:block lg:hidden"/> decision making</>
 }, {
   bold: "Support for TLS 1.2",
-  normal: " devices to get more out of your hardware investment."
+  normal: " devices to get more out of your hardware investment"
 }]
 
 const Features = () => (
   <section className="container flex justify-between flex-col lg:flex-row">
-    <div className="mb-2 md:mb-8 lg:mb-0 lg:w-2/5 xl:w-1/2 lg:mt-8 xl:my-16 2xl:mb-0 relative">
+    <div className="mb-2 md:mb-8 lg:mb-0 lg:w-2/5 xl:w-1/2 lg:mt-8 xl:pr-4 xl:my-16 2xl:mb-0 relative">
       <p className="subheader text-black-1 text-center lg:text-left mb-6 lg:mb-2">
         Product Features
       </p>
