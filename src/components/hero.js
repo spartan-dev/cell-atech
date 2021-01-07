@@ -1,28 +1,50 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
-import LogoHero from '../images/svg/logo-hero.svg'
 import Background from '../images/svg/background-hero.svg'
+import ContactForm from "../components/contactform";
+import LogoHero from '../images/svg/logo-hero.svg'
+import Modal from "../components/modal";
 
-const Hero = () => (
-	<section className='hero bg-gr-red'>
-		<div className='container flex justify-between flex-col lg:flex-row'>
-			<div className="pt-8 md:pt-24 w-full md:w-3/4 lg:w-1/2">
-				<LogoHero className='logo-white' />
-				<h1 className='header text-white'>Warehouse &amp; Inventory Solutions Transforming Material Handling</h1>
-				<div className='my-4 md:my-5'>
-					<p className='text-body text-white'>
-						Providing true cloud WMS and WES. Cella Technologies <br className="hidden sm:block" />
+const Hero = () => {
+	const body = document.getElementsByTagName('body')[0]
+	const [showModal, setShowModal] = useState(false);
+
+	useEffect(() => {
+		body.style.overflow = showModal ? 'hidden' : 'auto'
+	}, [body.style.overflow, showModal])
+
+	return (
+		<section className='hero bg-gr-red'>
+			{showModal && (
+				<Modal
+					show={showModal}
+					onClick={() => {
+						setShowModal(false);
+					}}
+					children={<ContactForm />}
+				/>
+			)}
+			<div className='container flex justify-between flex-col lg:flex-row'>
+				<div className="pt-8 md:pt-24 w-full md:w-3/4 lg:w-1/2">
+					<LogoHero className='logo-white' />
+					<h1 className='header text-white'>Warehouse &amp; Inventory Solutions Transforming Material Handling</h1>
+					<div className='my-4 md:my-5'>
+						<p className='text-body text-white'>
+							Providing true cloud WMS and WES. Cella Technologies <br className="hidden sm:block" />
 					  supports Plex customers' warehouse and production <br className="hidden sm:block" />
 					  facilities around the globe.
 					</p>
+					</div>
+					<div className='pb-24'>
+						<button onClick={() => setShowModal(true)} className='btn btn-white'>
+							Contact Us
+					</button>
+					</div>
 				</div>
-				<div className='pb-24'>
-					<button className='btn btn-white'>Contact Us</button>
-				</div>
+				<Background className='hero-image' />
 			</div>
-			<Background className='hero-image' />
-		</div>
-	</section >
-);
+		</section >
+	)
+};
 
 export default Hero;
