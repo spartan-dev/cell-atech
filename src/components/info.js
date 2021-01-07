@@ -27,15 +27,20 @@ const InfoSection = () => (
 				the solution to empower your material handling team.
 				</p>
 		</div>
+		
 		<div className='flex flex-wrap items-center container justify-center xl:justify-between'>
-			<Card Img={Arrow} title="Directed Put-Away"
-				description="Maximize your space utilization, and drive inventory accuracy and efficiency throughout the material handling process." />
-			<Card Img={Graphic} title="Directed Picking" className="lg:ml-8 xl:ml-0"
-				description="Demand-driven picklists from production schedules, customer shipments, or min/max inventory levels. Equip your material handlers with this efficient tool." />
-			<Card Img={Phone} title="Mobile WMS Platform" className="lg:mb-0"
-				description={<>The power of the cloud in the hands of <br className="sm:hidden"/> your material handlers. Shop Mobile <br className="sm:hidden md:hidden lg:block xl:hidden"/> drives speed and accuracy for all of <br className="sm:hidden md:hidden lg:block xl:hidden"/> Cella's WMS tools.</>} />
-			<Card Img={Person} title="Associate Utilization" className="lg:mb-0 lg:ml-8 xl:ml-0"
-				description="Your ability to get the most out of your team is more important than ever. Leverage tools to make their work easier while increasing their output." />
+			<div data-aos="fade-up" data-aos-duration='1000' data-aos-anchor-placement='top-center' className='flex flex-wrap items-center container justify-center xl:justify-between' >
+				<Card Img={Arrow} title="Directed Put-Away"
+					description="Maximize your space utilization, and drive inventory accuracy and efficiency throughout the material handling process." />
+				<Card Img={Graphic} title="Directed Picking" className="lg:ml-8 xl:ml-0"
+					description="Demand-driven picklists from production schedules, customer shipments, or min/max inventory levels. Equip your material handlers with this efficient tool." />
+			</div>
+			<div data-aos="fade-up" data-aos-duration='1000' className='flex flex-wrap items-center container justify-center xl:justify-between' data-aos-anchor-placement='top-center'>
+				<Card Img={Phone} title="Mobile WMS Platform" className="lg:mb-0"
+					description={<>The power of the cloud in the hands of <br className="sm:hidden"/> your material handlers. Shop Mobile <br className="sm:hidden md:hidden lg:block xl:hidden"/> drives speed and accuracy for all of <br className="sm:hidden md:hidden lg:block xl:hidden"/> Cella's WMS tools.</>} />
+				<Card Img={Person} title="Associate Utilization" className="lg:mb-0 lg:ml-8 xl:ml-0"
+					description="Your ability to get the most out of your team is more important than ever. Leverage tools to make their work easier while increasing their output." />
+			</div>
 		</div>
 	</section>
 )

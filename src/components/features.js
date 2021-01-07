@@ -19,7 +19,7 @@ const list = [{
 
 const Features = () => (
   <section className="container flex justify-between flex-col lg:flex-row">
-    <div className="mb-2 md:mb-8 lg:mb-0 lg:w-2/5 xl:w-1/2 lg:mt-8 xl:pr-4 xl:my-16 2xl:mb-0 relative">
+    <div data-aos="fade-right" data-aos-duration='1000' data-aos-anchor-placement='top-center' className="mb-2 md:mb-8 lg:mb-0 lg:w-2/5 xl:w-1/2 lg:mt-8 xl:pr-4 xl:my-16 2xl:mb-0 relative">
       <p className="subheader text-black-1 text-center lg:text-left mb-6 lg:mb-2">
         Product Features
       </p>
