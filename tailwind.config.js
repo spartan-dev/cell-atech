@@ -7,7 +7,6 @@ module.exports = {
     extend: {
       colors: {
         white: "#FFFFFF",
-        'red-dark': '#730D12',
         red: '#9B1C22',
         'red-bright': '#D8272F',
         grey: '#F8F8F8',
@@ -23,11 +22,7 @@ module.exports = {
     fontFamily: {
       roboto: ['Roboto'],
       'open-sans': ['Open Sans']
-    },
-    maxWidth: {
-      heromd: '68%',
-      herolg: '50%'
-    },
+    }
   },
   variants: {
     backgroundColor: ["responsive", "hover", "focus", "active"],

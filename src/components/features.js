@@ -11,7 +11,7 @@ const list = [{
   normal: " to give everyone the right tool for the right job"
 }, {
   bold: "Data and Analytics",
-  normal: <>for real-time insight into operations and data-driven <br className="hidden sm:block lg:hidden"/> decision making</>
+  normal: <>for real-time insight into operations and data-driven <br className="hidden sm:block lg:hidden" /> decision making</>
 }, {
   bold: "Support for TLS 1.2",
   normal: " devices to get more out of your hardware investment"
@@ -34,7 +34,7 @@ const Features = () => (
         ))}
       </ul>
     </div>
-    <img src={features_img} className="image" />
+    <img src={features_img} className="image" alt="Cella Technologies" title="Cella Technologies" />
   </section>
 );
 
