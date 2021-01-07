@@ -8,7 +8,7 @@ const Testimonials = () => {
           What Our Customers Are Saying
         </p>
       </div>
-      <div className="flex flex-wrap justify-center xl:flex-nowrap xl:justify-between">
+      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" className="flex flex-wrap justify-center xl:flex-nowrap xl:justify-between">
         <PersonCard />
         <PersonCard className="middle-card" />
         <PersonCard />
