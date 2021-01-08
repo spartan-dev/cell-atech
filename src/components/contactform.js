@@ -33,6 +33,7 @@ const ContactForm = () => {
         <button className="btn btn-red" type="submit">
           SEND
         </button>
+        <div className="mt-4 text-white text-xs">margin</div>
       </form>
     </div>
   );

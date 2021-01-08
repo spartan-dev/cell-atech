@@ -23,7 +23,7 @@ const About = () => {
           <PersonCard className=" lg:block" />
         </div>
       </div>
-      <img src={about_img} className="image hidden lg:block" />
+      <img src={about_img} className="image hidden lg:block" alt="About Cella Technologies" title="About Cella Technologies" />
     </section>
   );
 };

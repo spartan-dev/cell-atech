@@ -34,7 +34,7 @@ const Features = () => (
         ))}
       </ul>
     </div>
-    <img src={features_img} className="image" />
+    <img src={features_img} className="image shadow-img" alt="Cella Technologies" title="Cella Technologies" />
   </section>
 );
 

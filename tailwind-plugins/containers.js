@@ -34,7 +34,11 @@ module.exports = function ({ theme, addUtilities }) {
     },
     ".modal-close": {
       margin: "0 auto",
-      "@media (min-width: 768px)": {
+      "@media (min-width: 1280px)": {
+        width: "890px",
+        padding: "64px 156px 30px 156px"
+      },
+      "@media (min-width: 768px) and (max-width:1279px)": {
         width: "580px"
       },
       "@media (min-width: 426px) and (max-width: 767px)": {

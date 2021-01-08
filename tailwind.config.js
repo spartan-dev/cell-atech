@@ -7,8 +7,6 @@ module.exports = {
     extend: {
       colors: {
         white: "#FFFFFF",
-        'red-dark': '#730D12',
-        red: '#9B1C22',
         'red-bright': '#D8272F',
         grey: '#F8F8F8',
         'black-1': 'rgba(0, 0, 0, 0.85)',
@@ -24,10 +22,9 @@ module.exports = {
       roboto: ['Roboto'],
       'open-sans': ['Open Sans']
     },
-    maxWidth: {
-      heromd: '68%',
-      herolg: '50%'
-    },
+    boxShadow: {
+      img: "0px 8.44413px 33.7765px rgba(87, 73, 73, 0.15)"
+    }
   },
   variants: {
     backgroundColor: ["responsive", "hover", "focus", "active"],
