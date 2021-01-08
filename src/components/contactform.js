@@ -3,11 +3,9 @@ import React from "react";
 const ContactForm = () => {
   return (
     <div className="modal">
-      <div className="lg:items-center lg:flex lg:flex-col">
-        <p className="subheader mt-6 mb-8 text-black-1">
-          Send us your information, <br className="hidden sm:block" /> and we will be in touch soon.
-        </p>
-      </div>
+      <p className="subheader mt-6 md:mt-0 mb-8 text-black-1">
+        Send us your information, <br className="hidden sm:block" /> and we will be in touch soon.
+      </p>
       <form action="">
         <div className="text-black-4">
           <input
