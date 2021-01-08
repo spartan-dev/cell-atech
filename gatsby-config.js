@@ -42,5 +42,17 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Cella-Tech`,
+        short_name: `cella-tech`,
+        start_url: `/`,
+        background_color: `#F8F8F8`,
+        theme_color: `#D8272F`,
+        display: `standalone`,
+        icon: `${__dirname}/src/images/favicon.png`,
+      },
+    },
   ],
 };
