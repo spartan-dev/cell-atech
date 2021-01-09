@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 
 import About from "../components/about";
 import Contact from "../components/contact";
@@ -8,17 +8,11 @@ import Hero from "../components/hero";
 import InfoSection from "../components/info";
 import Testimonials from "../components/testimonials";
 import SEO from "../components/seo";
-import AOS from 'aos';
-import 'aos/dist/aos.css'
+import Layout from "../components/Main";
 
 export default function Home() {
-
-  useEffect(()=>{
-    AOS.init();
-  })
-
   return (
-    <main>
+    <Layout>
       <SEO />
       <Hero />
       <InfoSection />
@@ -27,6 +21,6 @@ export default function Home() {
       <Contact />
       <About />
       <Footer />
-    </main>
+    </Layout>
   );
 }
