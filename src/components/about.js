@@ -6,8 +6,8 @@ const About = () => {
   return (
     <section className="container flex lg:justify-between items-center flex-col lg:flex-row about-section">
       <div
-        data-aos="fade-right"
-        data-aos-anchor-placement="top-bottom"
+        /* data-aos="fade-right"
+        data-aos-anchor-placement="top-bottom" */
         className="lg:w-1/2 flex flex-col -mb-12"
       >
         <div className="text-center lg:text-left lg:flex lg:flex-col">
