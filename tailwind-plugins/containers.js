@@ -20,16 +20,29 @@ module.exports = function ({ theme, addUtilities }) {
       },
     },
     ".modal": {
-      "@media (min-width: 768px)": {
+      "@media (min-width: 1280px)": {
         width: "470px",
         margin: "40px auto 0 auto",
+        height: "473px"
+      },
+      "@media (min-width: 1024px) and (max-width: 1279px)": {
+        width: "470px",
+        margin: "40px auto 0 auto",
+        height: "457px"
+      },
+      "@media (min-width: 768px) and (max-width: 1023px)": {
+        width: "470px",
+        margin: "40px auto 0 auto",
+        height: "457px"
       },
       "@media (min-width: 426px) and (max-width: 767px)": {
         width: "370px",
-        margin: "0px auto"
+        margin: "0px auto",
+        height: "409px"
       },
       "@media (max-width: 425px)": {
         maxWidth: "320px",
+        height: "100%"
       },
     },
     ".modal-close": {

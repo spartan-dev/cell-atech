@@ -1,38 +1,83 @@
-import React from "react";
+import React, { useState } from "react";
+
+import Sent from "../images/svg/sent.svg"
 
 const ContactForm = () => {
-  return (
-    <div className="modal">
-      <p className="subheader mt-6 md:mt-0 mb-8 text-black-1">
-        Send us your information, <br className="hidden sm:block" /> and we will be in touch soon.
-      </p>
-      <form action="">
-        <div className="text-black-4">
-          <input
-            className="w-full mb-10 sm:mb-8 md:mb-12 border-solid border-b border-black-2 pb-3 focus:outline-none"
-            type="text"
-            name="name"
-            placeholder="Name"
-          />
-          <input
-            className="w-full mb-10 sm:mb-8 md:mb-12 border-solid border-b border-black-2 pb-3 focus:outline-none"
-            type="text"
-            name="company"
-            placeholder="Company"
-          />
-          <input
-            className="w-full mb-10 sm:mb-8 md:mb-12 border-solid border-b border-black-2 pb-3 focus:outline-none"
-            type="text"
-            name="email"
-            placeholder="Email"
-          />
-        </div>
+  const [form, setForm] = useState({});
+  const [sent, setSent] = useState(false)
 
+  const valid = Object.values(form).length === 3;
+
+  const onChange = (e) => {
+    e.persist();
+    setForm((prevState) => {
+      return {
+        ...prevState,
+        [e.target.name]: e.target.value,
+      };
+    });
+  };
+
+  return (
+    <div>
+      {sent ?
+        <div
+          className="modal flex flex-col items-center 
+            justify-center sm:justify-start sm:pt-4">
+          <Sent className="-mt-8 sm:mt-12 md:mt-24" />
+          <p className="mt-6 subheader text-black-1">
+            Message sent.
+          </p>
+        </div>
+        :
+        <div className="modal">
+          <p className="subheader mt-6 md:mt-0 mb-8 text-black-1">
+            Send us your information, <br className="hidden sm:block" /> and we will be in touch soon.
+          </p>
+          <form action="">
+            <div className="text-black-4">
+              <input
+                className="w-full mb-10 sm:mb-8 md:mb-12 border-solid border-b border-black-2 pb-3 focus:outline-none"
+                type="text"
+                name="name"
+                placeholder="Name"
+                onChange={onChange}
+              />
+              <input
+                className="w-full mb-10 sm:mb-8 md:mb-12 border-solid border-b border-black-2 pb-3 focus:outline-none"
+                type="text"
+                name="company"
+                placeholder="Company"
+                onChange={onChange}
+              />
+              <input
+                className="w-full mb-10 sm:mb-8 md:mb-12 border-solid border-b border-black-2 pb-3 focus:outline-none"
+                type="text"
+                name="email"
+                placeholder="Email"
+                onChange={onChange}
+              />
+            </div>
+
+<<<<<<< HEAD
         <button className="btn btn-red" type="submit">
           SEND
         </button>
         <div className="mt-4 text-white text-xs">margin</div>
       </form>
+=======
+            <button
+              className="btn btn-red"
+              type="submit"
+              disabled={!valid}
+              onClick={() => setSent(true)}>
+              SEND
+            </button>
+            <div className="mt-4 text-white text-xs">margin</div>
+          </form>
+        </div>
+      }
+>>>>>>> e97fae64c595bb6779e97e9a93cfd5f8bf31d75b
     </div>
   );
 };

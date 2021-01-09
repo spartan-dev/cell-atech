@@ -2,6 +2,9 @@ import React from "react";
 import Image from "./Image";
 import CheckMark from "../images/svg/check-mark.svg";
 
+import CheckMark from "../images/svg/check-mark.svg";
+import features_img from "../images/assets/features_img.png";
+
 const list = [
   {
     bold: "Seamless Integration",
