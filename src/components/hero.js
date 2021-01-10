@@ -5,7 +5,7 @@ import Background from '../images/svg/background-hero.svg'
 
 const Hero = () => (
 	<section className='hero bg-gr-red'>
-		<div className='container flex justify-between flex-col lg:flex-row'>
+		<div className='container flex justify-between flex-col lg:flex-row fixed top-0 right-0 left-0 w-full'>
 			<div className="pt-8 md:pt-24 w-full md:w-3/4 lg:w-1/2">
 				<LogoHero className='logo-white' />
 				<h1 className='header text-white'>Warehouse &amp; Inventory Solutions Transforming Material Handling</h1>

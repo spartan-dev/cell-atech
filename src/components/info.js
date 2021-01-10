@@ -18,7 +18,7 @@ const Card = ({ className, Img, title, description }) => (
 )
 
 const InfoSection = () => (
-	<section className='container info-section'>
+	<section className='bg-white relative z-50 container'>
 		<div className='text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-12 lg:items-center lg:flex lg:flex-col'>
 			<p className='subheader mb-5 xl:mb-2 text-black-1'>How We Can Help</p>
 			<p className='text-body text-black-3 lg:w-3/4'>
@@ -29,13 +29,13 @@ const InfoSection = () => (
 		</div>
 		
 		<div className='flex flex-wrap items-center container justify-center xl:justify-between'>
-			<div data-aos="fade-up" data-aos-duration='1000' data-aos-anchor-placement='top-center' className='flex flex-wrap items-center container justify-center xl:justify-between' >
+			<div data-aos="fade-up" className='flex flex-wrap items-center container justify-center xl:justify-between' >
 				<Card Img={Arrow} title="Directed Put-Away"
 					description="Maximize your space utilization, and drive inventory accuracy and efficiency throughout the material handling process." />
 				<Card Img={Graphic} title="Directed Picking" className="lg:ml-8 xl:ml-0"
 					description="Demand-driven picklists from production schedules, customer shipments, or min/max inventory levels. Equip your material handlers with this efficient tool." />
 			</div>
-			<div data-aos="fade-up" data-aos-duration='1000' className='flex flex-wrap items-center container justify-center xl:justify-between' data-aos-anchor-placement='top-center'>
+			<div data-aos="fade-up" className='flex flex-wrap items-center container justify-center xl:justify-between'>
 				<Card Img={Phone} title="Mobile WMS Platform" className="lg:mb-0"
 					description={<>The power of the cloud in the hands of <br className="sm:hidden"/> your material handlers. Shop Mobile <br className="sm:hidden md:hidden lg:block xl:hidden"/> drives speed and accuracy for all of <br className="sm:hidden md:hidden lg:block xl:hidden"/> Cella's WMS tools.</>} />
 				<Card Img={Person} title="Associate Utilization" className="lg:mb-0 lg:ml-8 xl:ml-0"

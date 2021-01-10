@@ -21,12 +21,15 @@ export default function Home() {
     <main>
       <SEO />
       <Hero />
+      <div className="bg-white relative z-50 container info-section">
       <InfoSection />
       <Features />
       <Testimonials />
       <Contact />
       <About />
+      </div>
       <Footer />
+      
     </main>
   );
 }

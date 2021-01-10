@@ -6,7 +6,7 @@ const Contact = () => {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <section className="container">
+    <section className="bg-white relative z-50 container">
       {showModal && (
         <Modal
           show={showModal}

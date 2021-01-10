@@ -5,7 +5,7 @@ import about_img from "../images/assets/about-img.png";
 
 const About = () => {
   return (
-    <section className="container flex lg:justify-between items-center flex-col lg:flex-row about-section">
+    <section className="bg-white relative z-50 container flex lg:justify-between items-center flex-col lg:flex-row about-section">
       <div data-aos="fade-right" data-aos-duration='1000' data-aos-anchor-placement='top-center'  className="lg:w-1/2 flex flex-col -mb-12">
         <div className="text-center lg:text-left lg:flex lg:flex-col">
           <p className="subheader mb-5 xl:mb-2 text-black-1">
