@@ -12,6 +12,25 @@ import Layout from "../components/Main";
 
 export default function Home() {
 
+  useEffect(()=> {
+    const contentElement = document.querySelector(".info-section");
+
+window.onscroll = function() { fadeInContent() }
+let opacity = 0.1;
+
+function fadeInContent() {
+  const rect = contentElement.getBoundingClientRect();
+  opacity+= 0.009;
+
+  console.log(opacity);
+
+  if ( rect.y >= 0 && opacity <= 1) {
+    contentElement.style.opacity = opacity;
+  }
+
+}
+  });
+
 
   return (
     <Layout>

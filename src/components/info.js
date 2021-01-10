@@ -47,6 +47,6 @@ const InfoSection = () => (
 	</section>
 );
 
-   
+
 
 export default InfoSection;
