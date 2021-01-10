@@ -1,21 +1,23 @@
-import React from 'react'
+import React from "react";
 
-import Arrow from '../images/svg/arrow.svg'
-import Graphic from '../images/svg/graph.svg'
-import Person from '../images/svg/people.svg'
-import Phone from '../images/svg/phone.svg'
+import Arrow from "../images/svg/arrow.svg";
+import Graphic from "../images/svg/graph.svg";
+import Person from "../images/svg/people.svg";
+import Phone from "../images/svg/phone.svg";
 
 const Card = ({ className, Img, title, description }) => (
-	<div className={`card flex flex-col sm:flex-row lg:flex-col xl:flex-row xl:justify-between sm:justify-between items-center lg:justify-center mb-6 md:mb-8 ${className}`}>
-		<div className="mb-4 sm:mb-0 lg:mb-4 xl:mb-0">
-			<Img className="icon" />
-		</div>
-		<div className='icon-text text-center sm:text-left lg:text-center xl:text-left'>
-			<h2 className='text-title text-black-2 mb-2'>{title}</h2>
-			<h3 className='text-small text-black-4'>{description}</h3>
-		</div>
-	</div>
-)
+  <div
+    className={`card flex flex-col sm:flex-row lg:flex-col xl:flex-row xl:justify-between sm:justify-between items-center lg:justify-center mb-6 md:mb-8 ${className}`}
+  >
+    <div className="mb-4 sm:mb-0 lg:mb-4 xl:mb-0">
+      <Img className="icon" />
+    </div>
+    <div className="icon-text text-center sm:text-left lg:text-center xl:text-left">
+      <h2 className="text-title text-black-2 mb-2">{title}</h2>
+      <h3 className="text-small text-black-4">{description}</h3>
+    </div>
+  </div>
+);
 
 const InfoSection = () => (
 	<section className='bg-white relative z-50 container'>
@@ -29,13 +31,13 @@ const InfoSection = () => (
 		</div>
 		
 		<div className='flex flex-wrap items-center container justify-center xl:justify-between'>
-			<div data-aos="fade-up" className='flex flex-wrap items-center container justify-center xl:justify-between' >
+			<div className='flex flex-wrap items-center container justify-center xl:justify-between' >
 				<Card Img={Arrow} title="Directed Put-Away"
 					description="Maximize your space utilization, and drive inventory accuracy and efficiency throughout the material handling process." />
 				<Card Img={Graphic} title="Directed Picking" className="lg:ml-8 xl:ml-0"
 					description="Demand-driven picklists from production schedules, customer shipments, or min/max inventory levels. Equip your material handlers with this efficient tool." />
 			</div>
-			<div data-aos="fade-up" className='flex flex-wrap items-center container justify-center xl:justify-between'>
+			<div className='flex flex-wrap items-center container justify-center xl:justify-between'>
 				<Card Img={Phone} title="Mobile WMS Platform" className="lg:mb-0"
 					description={<>The power of the cloud in the hands of <br className="sm:hidden"/> your material handlers. Shop Mobile <br className="sm:hidden md:hidden lg:block xl:hidden"/> drives speed and accuracy for all of <br className="sm:hidden md:hidden lg:block xl:hidden"/> Cella's WMS tools.</>} />
 				<Card Img={Person} title="Associate Utilization" className="lg:mb-0 lg:ml-8 xl:ml-0"
@@ -43,6 +45,8 @@ const InfoSection = () => (
 			</div>
 		</div>
 	</section>
-)
+);
+
+   
 
 export default InfoSection;

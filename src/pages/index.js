@@ -8,17 +8,13 @@ import Hero from "../components/hero";
 import InfoSection from "../components/info";
 import Testimonials from "../components/testimonials";
 import SEO from "../components/seo";
-import AOS from 'aos';
-import 'aos/dist/aos.css'
+import Layout from "../components/Main";
 
 export default function Home() {
 
-  useEffect(()=>{
-    AOS.init();
-  })
 
   return (
-    <main>
+    <Layout>
       <SEO />
       <Hero />
       <div className="bg-white relative z-50 container info-section">
@@ -29,7 +25,6 @@ export default function Home() {
       <About />
       </div>
       <Footer />
-      
-    </main>
+    </Layout>
   );
 }

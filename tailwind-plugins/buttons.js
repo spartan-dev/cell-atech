@@ -17,7 +17,8 @@ module.exports = function ({ theme, addUtilities }) {
         width: '192px',
         height: '56px',
         '&:disabled': {
-          cursor: 'not-allowed'
+          cursor: 'not-allowed',
+          opacity: "0.8"
         },
         '&:focus': {
           outline: 'none'
