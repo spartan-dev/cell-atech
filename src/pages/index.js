@@ -16,7 +16,7 @@ export default function Home() {
     const contentElement = document.querySelector(".info-section");
 
 window.onscroll = function() { fadeInContent() }
-let opacity = 0.1;
+let opacity = 0.5;
 
 function fadeInContent() {
   const rect = contentElement.getBoundingClientRect();
