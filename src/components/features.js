@@ -26,31 +26,33 @@ const list = [
 ];
 
 const Features = () => (
-  <section className=" bg-white relative z-50 container flex justify-between flex-col lg:flex-row mt-16">
-    <div className="mb-2 md:mb-8 lg:mb-0 lg:w-2/5 xl:w-1/2 lg:mt-8 xl:pr-4 xl:my-16 2xl:mb-0 relative">
-      <p className="subheader text-black-1 text-center lg:text-left mb-6 lg:mb-2">
-        Product Features
+  <section className="relative">
+    <div className="container flex justify-between flex-col lg:flex-row">
+      <div className="mb-2 md:mb-8 lg:mb-0 lg:w-2/5 xl:w-1/2 lg:mt-8 xl:pr-4 xl:my-16 2xl:mb-0">
+        <p className="subheader text-black-1 text-center lg:text-left mb-6 lg:mb-2">
+          Product Features
       </p>
-      <ul>
-        {list.map((item, i) => (
-          <li className="flex my-4 sm:my-8">
-            <span>
-              <CheckMark />
-            </span>
-            <p className="text-small text-black-2 ml-4">
-              <h2 className="font-semibold inline-block">{item.bold}</h2>
-              {item.normal}
-            </p>
-          </li>
-        ))}
-      </ul>
+        <ul>
+          {list.map((item, i) => (
+            <li className="flex my-4 sm:my-8">
+              <span>
+                <CheckMark />
+              </span>
+              <p className="text-small text-black-2 ml-4">
+                <h2 className="font-semibold inline-block">{item.bold}</h2>
+                {item.normal}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className="image">
+        <Image
+          filename="features_img.png"
+          alt="Cella Technologies"
+        />
+      </div>
     </div>
-    <Image
-      className="image shadow-img"
-      filename="features_img.png"
-      alt="Cella Technologies"
-      title="Cella Technologies"
-    />
   </section>
 );
 

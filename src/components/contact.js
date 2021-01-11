@@ -16,7 +16,7 @@ const Contact = () => {
   }, [body, showModal]);
 
   return (
-    <section className="bg-white relative z-50 container">
+    <section className="container">
       {showModal && (
         <Modal
           show={showModal}

@@ -2,7 +2,7 @@ import React from "react";
 import PersonCard from "../components/personcard";
 const Testimonials = () => {
   return (
-    <section className="bg-white relative z-50 container testimonials-section">
+    <section className="container testimonials-section">
       <div className="text-center sm:mb-11 md:mb-16 lg:items-center lg:flex lg:flex-col">
         <p className="subheader md:mb-5 text-black-1">
           What Our Customers Are Saying

@@ -87,7 +87,7 @@ module.exports = function ({ theme, addUtilities }) {
         width: '670px'
       },
       '@media (min-width:426px) and (max-width: 767px)': {
-        width: '570px'
+        width: '420px'
       },
       '@media (max-width: 425px)': {
         width: '320px'
@@ -121,16 +121,16 @@ module.exports = function ({ theme, addUtilities }) {
       }
     },
     '.hero': {
-      '@media (min-width:1024px)': {
+      '@media (min-width:1280px)': {
         height: '100vh'
       },
-      '@media (min-width:768px) and (max-width: 1023px)': {
-        height: '75vh'
+      '@media (min-width:768px) and (max-width: 1279px)': {
+        height: '768px',
       },
-      '@media (min-width:640px) and (max-width: 767px)': {
-        height: '100vh'
+      '@media (min-width:426px) and (max-width: 767px)': {
+        height: '600px',
       },
-      '@media (max-width: 639px)': {
+      '@media (max-width: 425px)': {
         height: '75vh'
       }
     }
