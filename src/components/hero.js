@@ -31,7 +31,7 @@ const Hero = () => {
       )}
       <div className="fixed left-0 right-0">
         <div className="container flex justify-between flex-col lg:flex-row">
-          <div className="pt-8 md:pt-24 w-full md:w-3/4 lg:w-1/2 overflow-scroll">
+          <div className="pt-8 md:pt-24 w-full md:w-3/4 lg:w-1/2">
             <LogoHero className="logo-white" />
             <h1 className="header text-white">
               Warehouse &amp; Inventory Solutions Transforming Material Handling

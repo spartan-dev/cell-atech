@@ -24,7 +24,7 @@ const About = () => {
         <div className="image hidden lg:block">
           <Image
             alt="About Cella Technologies"
-            filename="about-img.png"
+            filename="hex-photo.png"
           />
         </div>
       </div>

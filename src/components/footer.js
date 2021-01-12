@@ -2,7 +2,7 @@ import React from 'react'
 import Logo from '../images/svg/logo-footer.svg'
 
 const Footer = () => (
-	<section className='container pb-6 sm:flex sm:justify-between sm:text-right md:flex-col items-end md:items-center lg:flex-row lg:justify-between'>
+	<section className='relative z-50 bg-white container pb-6 sm:flex sm:justify-between sm:text-right md:flex-col items-end md:items-center lg:flex-row lg:justify-between'>
 		<div className='mb-6 sm:mb-3 md:mb-8'>
 			<Logo className='logo-color' />
 		</div>
