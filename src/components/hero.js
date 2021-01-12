@@ -19,7 +19,7 @@ const Hero = () => {
   }, [body, showModal]);
 
   return (
-    <section className="hero bg-gr-red">
+    <section className="hero bg-gr-red relative z-10">
       {showModal && (
         <Modal
           show={showModal}
@@ -45,7 +45,7 @@ const Hero = () => {
               facilities around the globe.
             </p>
             </div>
-            <div className="pb-24">
+            <div className="pb-24 relative z-10">
               <button
                 onClick={() => setShowModal(true)}
                 className="btn btn-white"

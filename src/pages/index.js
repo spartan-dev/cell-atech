@@ -32,7 +32,7 @@ export default function Home() {
     <Layout>
       <SEO />
       <Hero />
-      <div className="bg-white relative z-10 body">
+      <div className="bg-white relative z-50 body">
         <InfoSection />
         <Features />
         <Testimonials />
