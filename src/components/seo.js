@@ -8,7 +8,7 @@ const SEO = () => {
       htmlAttributes={{
         lang: `en`
       }}
-      title={`Warehouse & Inventory Solutions Transforming Material Handling`}
+      title={`Cella Technologies | Warehouse & Inventory Solutions`}
       meta={[
         {
           name: `description`,

@@ -15,9 +15,12 @@ module.exports = function ({ theme, addUtilities }) {
       "@media (min-width: 640px) and (max-width: 767px)": {
         maxWidth: "570px",
       },
-      "@media (max-width: 639px)": {
-        maxWidth: "320px",
+      "@media (min-width: 426px) and (max-width: 639px)": {
+        width: "420px",
       },
+      "@media (max-width: 425px)": {
+        maxWidth: "320px",
+      }
     },
     ".modal": {
       "@media (min-width: 1280px)": {
@@ -52,7 +55,9 @@ module.exports = function ({ theme, addUtilities }) {
         padding: "64px 156px 30px 156px"
       },
       "@media (min-width: 768px) and (max-width:1279px)": {
-        width: "580px"
+        width: "580px",
+        padding: "35px 0",
+        margin: "auto"
       },
       "@media (min-width: 426px) and (max-width: 767px)": {
         width: "480px",
@@ -159,7 +164,7 @@ module.exports = function ({ theme, addUtilities }) {
     ".info-section": {
       "@media (min-width:1280px)": {
         paddingTop: "120px",
-        paddingBottom: "160px"
+        paddingBottom: "190px"
       },
       "@media (min-width: 1024px) and (max-width: 1279px)": {
         paddingTop: "98px",
@@ -180,51 +185,51 @@ module.exports = function ({ theme, addUtilities }) {
     },
     ".testimonials-section": {
       "@media (min-width:1280px)": {
-        marginTop: "180px",
-        marginBottom: "220px"
+        paddingTop: "195px",
+        paddingBottom: "220px"
       },
       "@media (min-width: 1024px) and (max-width: 1279px)": {
-        marginTop: "200px",
-        marginBottom: "210px"
+        paddingTop: "210px",
+        paddingBottom: "210px"
       },
       "@media (min-width: 768px) and (max-width: 1023px)": {
-        marginTop: "130px",
-        marginBottom: "140px"
+        paddingTop: "130px",
+        paddingBottom: "140px"
       },
       "@media (min-width: 426px) and (max-width: 767px)": {
-        marginTop: "76px",
-        marginBottom: "90px"
+        paddingTop: "76px",
+        paddingBottom: "90px"
       },
       "@media (max-width: 425px)": {
-        marginTop: "56px",
-        marginBottom: "64px"
+        paddingTop: "56px",
+        paddingBottom: "64px"
       },
     },
     ".about-section": {
       '@media (min-width: 1536px)': {
-        marginTop: "130px",
-        marginBottom: "148px"
+        paddingTop: "130px",
+        paddingBottom: "148px"
       },
       '@media (min-width:1280px) and (max-width: 1535px)': {
-        marginTop: "320px",
-        marginBottom: "345px"
+        paddingTop: "320px",
+        paddingBottom: "345px"
       },
       '@media (min-width:1024px) and (max-width: 1279px)': {
-        marginTop: "280px",
-        marginBottom: "215px"
+        paddingTop: "280px",
+        paddingBottom: "215px"
       },
       "@media (min-width: 768px) and (max-width: 1023px)": {
-        marginTop: "140px",
-        marginBottom: "180px"
+        paddingTop: "140px",
+        paddingBottom: "180px"
       },
       "@media (min-width: 426px) and (max-width: 767px)": {
-        marginTop: "90px",
-        marginBottom: "90px"
+        paddingTop: "90px",
+        paddingBottom: "90px"
       },
       "@media (max-width: 425px)": {
-        marginTop: "64px",
-        marginBottom: "90px"
-      },
+        paddingTop: "64px",
+        paddingBottom: "90px"
+      }
     },
   });
 };

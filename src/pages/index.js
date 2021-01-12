@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 
 import About from "../components/about";
 import Contact from "../components/contact";
@@ -12,23 +12,19 @@ import Layout from "../components/Main";
 
 export default function Home() {
 
-  useEffect(()=> {
-    const contentElement = document.querySelector(".info-section");
+  useEffect(() => {
+    const contentElement = document.querySelector(".body");
 
-window.onscroll = function() { fadeInContent() }
-let opacity = 0.5;
+    window.onscroll = function () { fadeInContent() }
+    let opacity = 0.5;
 
-function fadeInContent() {
-  const rect = contentElement.getBoundingClientRect();
-  opacity+= 0.009;
+    function fadeInContent() {
+      const rect = contentElement.getBoundingClientRect();
+      opacity += 0.009;
 
-  console.log(opacity);
-
-  if ( rect.y >= 0 && opacity <= 1) {
-    contentElement.style.opacity = opacity;
-  }
-
-}
+      if (rect.y >= 0 && opacity <= 1)
+        contentElement.style.opacity = opacity;
+    }
   });
 
 
@@ -36,12 +32,12 @@ function fadeInContent() {
     <Layout>
       <SEO />
       <Hero />
-      <div className="bg-white relative z-50 container info-section">
-      <InfoSection />
-      <Features />
-      <Testimonials />
-      <Contact />
-      <About />
+      <div className="bg-white relative z-10 body">
+        <InfoSection />
+        <Features />
+        <Testimonials />
+        <Contact />
+        <About />
       </div>
       <Footer />
     </Layout>
