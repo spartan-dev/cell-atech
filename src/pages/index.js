@@ -13,7 +13,7 @@ import Layout from "../components/Main";
 export default function Home() {
 
   useEffect(() => {
-    let opacity = 0.1;
+    let opacity = 0.5;
     const contentElement = document.querySelector(".info-section");
     window.addEventListener('scroll', () => {
       const rect = contentElement.getBoundingClientRect();

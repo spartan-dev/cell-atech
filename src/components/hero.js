@@ -19,7 +19,7 @@ const Hero = () => {
   }, [body, showModal]);
 
   return (
-    <section className="hero bg-gr-red relative z-10">
+    <section className="hero bg-gr-red">
       {showModal && (
         <Modal
           show={showModal}
