@@ -42,8 +42,8 @@ export default function Home() {
         <Testimonials />
         <Contact />
         <About />
-      </div>
       <Footer />
+      </div>
     </Layout>
   );
 }
