@@ -20,7 +20,7 @@ const Card = ({ className, Img, title, description }) => (
 );
 
 const InfoSection = () => (
-	<section className='container info-section'>
+	<section className='container info-section bg-white relative z-50"'>
 		<div className='text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-12 lg:items-center lg:flex lg:flex-col'>
 			<p className='subheader mb-5 xl:mb-2 text-black-1'>How We Can Help</p>
 			<p className='text-body text-black-3 lg:w-3/4'>

@@ -13,8 +13,8 @@ import Layout from "../components/Main";
 export default function Home() {
 
   useEffect(() => {
-    let opacity = 0.5;
-    const contentElement = document.querySelector(".info-section");
+    let opacity = 0.1;
+    const contentElement = document.querySelector(".allSection");
     window.addEventListener('scroll', () => {
       const rect = contentElement.getBoundingClientRect();
       opacity+= 0.009;
@@ -36,7 +36,7 @@ export default function Home() {
     <Layout>
       <SEO />
       <Hero />
-      <div className="bg-white relative z-50">
+      <div className="bg-white relative z-50 allSection">
         <InfoSection />
         <Features />
         <Testimonials />

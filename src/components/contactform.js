@@ -19,7 +19,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div>
+    <div className='h-full'>
       {sent ? (
         <div
           className="modal flex flex-col items-center 
