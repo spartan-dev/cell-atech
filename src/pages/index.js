@@ -20,9 +20,13 @@ export default function Home() {
       opacity+= 0.009;
   
       console.log(opacity);
+      console.log(rect)
   
-      if ( rect.y >= 0 && opacity <= 1) {
+      if ( rect.y >= 1 && opacity <= 1) {
         contentElement.style.opacity = opacity;
+      }
+      else{
+        contentElement.style.opacity = 1;
       }
     })
   
