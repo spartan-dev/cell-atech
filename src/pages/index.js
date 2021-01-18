@@ -13,26 +13,18 @@ import Layout from "../components/Main";
 export default function Home() {
 
   useEffect(() => {
-    let opacity = 0.1;
-    const contentElement = document.querySelector(".allSection");
-    window.addEventListener('scroll', () => {
-      const rect = contentElement.getBoundingClientRect();
-      opacity+= 0.009;
+    const checkpoint = 600;
+    let opacity = 0;
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll <= checkpoint) {
+    opacity = .5 + currentScroll / checkpoint;
+  } else {
+    opacity = 1;
+  }
+  document.querySelector(".allSection").style.opacity = opacity;
+});
   
-      console.log(opacity);
-      console.log(rect)
-  
-      if ( rect.y >= 1 && opacity <= 1) {
-        contentElement.style.opacity = opacity;
-      }
-      else{
-        contentElement.style.opacity = 1;
-      }
-    })
-  
-    return () => {
-      window.removeEventListener('scroll', () => {console.log('removed scroll listener')})
-    }
   }, [])
 
 
