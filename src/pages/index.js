@@ -13,7 +13,7 @@ import Layout from "../components/Main";
 export default function Home() {
 
   useEffect(() => {
-    const checkpoint = 600;
+    const checkpoint = 1100;
     let opacity = 0;
 window.addEventListener("scroll", () => {
   const currentScroll = window.pageYOffset;

@@ -28,7 +28,7 @@ const list = [
 const Features = () => (
   <section className="relative">
     <div className="container flex justify-between flex-col lg:flex-row items-center">
-      <div className="mb-2 md:mb-8 lg:mb-0 lg:w-2/5 xl:w-1/2 lg:mt-8 xl:pr-4 xl:my-16 2xl:mb-0">
+      <div className="mb-2 w-full md:mb-8 lg:mb-0 lg:w-2/5 xl:w-1/2 lg:mt-8 xl:pr-4 xl:my-16 2xl:mb-0">
         <p className="subheader text-black-1 text-center lg:text-left mb-6 lg:mb-2">
           Product Features
       </p>

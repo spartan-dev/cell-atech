@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section className="about-section">
       <div className="container flex lg:justify-between items-center flex-col lg:flex-row">
-        <div className=" items-center lg:w-1/2 flex flex-col -mb-12">
+        <div className="lg:w-1/2 flex flex-col -mb-12 xl:mb-0">
           <div className="text-center lg:text-left lg:flex lg:flex-col">
             <p className="subheader mb-5 xl:mb-2 text-black-1">
               About Cella Technologies
