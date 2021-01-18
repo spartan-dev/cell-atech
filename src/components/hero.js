@@ -29,7 +29,7 @@ const Hero = () => {
           children={<ContactForm />}
         />
       )}
-      <div className="fixed left-0 right-0">
+      <div className="fixed top-0 left-0 right-0">
         <div className="container flex justify-between flex-col lg:flex-row">
           <div className="pt-8 md:pt-24 w-full md:w-3/4 lg:w-1/2">
             <LogoHero className="logo-white" />
