@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 import About from "../components/about";
 import Contact from "../components/contact";
@@ -9,36 +9,50 @@ import InfoSection from "../components/info";
 import Testimonials from "../components/testimonials";
 import SEO from "../components/seo";
 import Layout from "../components/Main";
+import Modal from '../components/modal';
+import ContactForm from "../components/contactform";
 
 export default function Home() {
 
-  useEffect(() => {
-    const checkpoint = 1100;
-    let opacity = 0;
-window.addEventListener("scroll", () => {
-  const currentScroll = window.pageYOffset;
-  if (currentScroll <= checkpoint) {
-    opacity = .5 + currentScroll / checkpoint;
-  } else {
-    opacity = 1;
+  const [showModal, setShowModal] = useState(false);
+  const toggleModal = () => {
+    console.log('toggleModal')
+    setShowModal(prevState => setShowModal(!prevState.showModal) )
   }
-  document.querySelector(".allSection").style.opacity = opacity;
-});
-  
-  }, [])
 
-
+  useEffect(() => {
+    const checkpoint = 1200;
+    let opacity = 0;
+    window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll <= checkpoint) {
+      opacity = .5 + currentScroll / checkpoint;
+    } else {
+      opacity = 1;
+    }
+    document.querySelector(".allSection").style.opacity = opacity;
+  });
+    }, [])
+ 
   return (
     <Layout>
       <SEO />
-      <Hero />
-      <div className="bg-white relative z-50 allSection">
+      
+        <Modal
+          show={showModal}
+          onClick={() => {
+            setShowModal(false);
+          }}
+          children={<ContactForm />}
+        />
+        <Hero toggleModal={() => toggleModal()} />
+      <div className='bg-white z-50 allSection relative'>
         <InfoSection />
         <Features />
         <Testimonials />
-        <Contact />
+        <Contact toggleModal={() => toggleModal()}/>
         <About />
-      <Footer />
+        <Footer />
       </div>
     </Layout>
   );

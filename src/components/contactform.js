@@ -25,7 +25,7 @@ const ContactForm = () => {
           className="modal flex flex-col items-center 
             justify-center sm:justify-start sm:pt-4"
         >
-          <Sent className="-mt-8 sm:mt-12 md:mt-24" />
+          <Sent className="-mt-8 sm:mt-12 lg:mt-24" />
           <p className="mt-6 subheader text-black-1">Message sent.</p>
         </div>
       ) : (

@@ -23,6 +23,9 @@ module.exports = {
       roboto: ["Roboto"],
       "open-sans": ["Open Sans"],
     },
+    zIndex: {
+      999: '999'
+    }
   },
   variants: {
     backgroundColor: ["responsive", "hover", "focus", "active"],
