@@ -19,11 +19,11 @@ const ContactForm = () => {
   };
 
   return (
-    <div className='h-full'>
+    <div className={`h-full ${sent ? "" : "overflow-scroll"}`}>
       {sent ? (
         <div
           className="modal flex flex-col items-center 
-            justify-center sm:justify-start sm:pt-4"
+            justify-center sm:justify-start sm:pt-4" 
         >
           <Sent className="-mt-8 sm:mt-12 lg:mt-24" />
           <p className="mt-6 subheader text-black-1">Message sent.</p>

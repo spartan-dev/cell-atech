@@ -23,12 +23,14 @@ export default function Home() {
   useEffect(() => {
     const checkpoint = 1200;
     let opacity = 0;
+    const width = window.innerWidth;
     window.addEventListener("scroll", () => {
     const currentScroll = window.pageYOffset;
     if (currentScroll <= checkpoint) {
+      console.log(width)
       opacity = .5 + currentScroll / checkpoint;
-    } else {
-      opacity = 1;
+    } if (width <= 768) {
+      opacity = .8 + currentScroll / checkpoint;
     }
     document.querySelector(".allSection").style.opacity = opacity;
   });
