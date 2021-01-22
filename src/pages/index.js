@@ -27,10 +27,10 @@ export default function Home() {
     window.addEventListener("scroll", () => {
     const currentScroll = window.pageYOffset;
     if (currentScroll <= checkpoint) {
-      console.log(width)
+
       opacity = .5 + currentScroll / checkpoint;
-    } if (width <= 768) {
-      opacity = .8 + currentScroll / checkpoint;
+    } if (width <= 1024) {
+      opacity = 1;
     }
     document.querySelector(".allSection").style.opacity = opacity;
   });
@@ -39,7 +39,6 @@ export default function Home() {
   return (
     <Layout>
       <SEO />
-      
         <Modal
           show={showModal}
           onClick={() => {
@@ -48,14 +47,14 @@ export default function Home() {
           children={<ContactForm />}
         />
         <Hero toggleModal={() => toggleModal()} />
-      <div className='bg-white z-50 allSection relative'>
-        <InfoSection />
-        <Features />
-        <Testimonials />
-        <Contact toggleModal={() => toggleModal()}/>
-        <About />
-        <Footer />
-      </div>
+        <div className='bg-white z-50 allSection relative'>
+          <InfoSection />
+          <Features />
+          <Testimonials />
+          <Contact toggleModal={() => toggleModal()}/>
+          <About />
+          <Footer />
+        </div>
     </Layout>
   );
 }

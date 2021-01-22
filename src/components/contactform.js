@@ -11,6 +11,7 @@ const ContactForm = () => {
   const onChange = (e) => {
     e.persist();
     setForm((prevState) => {
+      console.log(e.target.name)
       return {
         ...prevState,
         [e.target.name]: e.target.value,
@@ -52,7 +53,7 @@ const ContactForm = () => {
                 />
                 <input
                   className="w-full mb-10 sm:mb-8 md:mb-12 border-solid border-b border-black-2 pb-3 focus:outline-none"
-                  type="text"
+                  type="email"
                   name="email"
                   placeholder="Email"
                   onChange={onChange}
